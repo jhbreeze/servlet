@@ -5,7 +5,7 @@ import java.util.Map;
 import com.servlet.domain.member.Member;
 import com.servlet.domain.member.MemberRepository;
 import com.servlet.web.frontcontroller.v3.ControllerV3;
-import com.servlet.web.frontcontroller.v3.ModelView;
+import com.servlet.web.frontcontroller.ModelView;
 
 public class MemberSaveControllerV3 implements ControllerV3 {
 

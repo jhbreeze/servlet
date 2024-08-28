@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.servlet.web.frontcontroller.ModelView;
 import com.servlet.web.frontcontroller.MyView;
 import com.servlet.web.frontcontroller.v3.controller.MemberFormControllerV3;
 import com.servlet.web.frontcontroller.v3.controller.MemberListControllerV3;
@@ -15,15 +16,15 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "fronControllerServletV3", urlPatterns = "/front-controller/v3/*")
+@WebServlet(name = "fronControllerServletV3", urlPatterns = "/front-controller/v5/*")
 public class FrontControllerServletV3 extends HttpServlet {
 
 	private Map<String, ControllerV3> controllerMap = new HashMap<>();
 
 	public FrontControllerServletV3() {
-		controllerMap.put("/front-controller/v3/members/new-form", new MemberFormControllerV3());
-		controllerMap.put("/front-controller/v3/members/save", new MemberSaveControllerV3());
-		controllerMap.put("/front-controller/v3/members", new MemberListControllerV3());
+		controllerMap.put("/front-controller/v5/v3/members/new-form", new MemberFormControllerV3());
+		controllerMap.put("/front-controller/v5/v3/members/save", new MemberSaveControllerV3());
+		controllerMap.put("/front-controller/v5/v3/members", new MemberListControllerV3());
 	}
 
 	@Override

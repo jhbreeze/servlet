@@ -1,4 +1,4 @@
-package com.servlet.web.frontcontroller.v3;
+package com.servlet.web.frontcontroller;
 
 import java.util.HashMap;
 import java.util.Map;
